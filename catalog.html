@@ -77,70 +77,54 @@
             <li>ПЕРФОРАТОРЫ</li>
           </ul>
         </section>
-        <section>
+        <section class="market-section">
           <h2>ПЕРФОРАТОРЫ</h2>
         </section>
-        <section>
-          <div class="filter-price">
-            <div class="filter">
-              <span>ФИЛЬТР:</span>
+        <section class="filter">
+          <form action="">
+            <div class="filter-price">
+              <div class="filter-title">
+                <span>ФИЛЬТР:</span>
+              </div>
+              <h3>ЦЕНА:</h3>
+              <div class="fader">
+              </div>
+              <input type="text" name="min" value="0">
+              <input type="text" name="max" value="3000">
             </div>
-            <h3>ЦЕНА:</h3>
-            <div class="">
+            <div class="filter-vendors">
+              <h3>ПРОИЗВОДИТЕЛИ:</h3>
+              <label>
+                <input type="checkbox" name="BOSH" checked>BOSH
+              </label>
+              <label>
+                <input type="checkbox" name="ИНТЕРСКОЛ">ИНТЕРСКОЛ
+              </label>
+              <label>
+                <input type="checkbox" name="MAKITA" checked>MAKITA
+              </label>
+              <label>
+                <input type="checkbox" name="DEWALT">DEWALT
+              </label>
+              <label>
+                <input type="checkbox" name="HITACHI">HITACHI
+              </label>
             </div>
-            <input type="text" name="min" value="0">
-            <input type="text" name="max" value="3000">
-          </div>
-          <div class="filter-vendors">
-            <h3>ПРОИЗВОДИТЕЛИ:</h3>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="BOSH" checked>BOSH
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="ИНТЕРСКОЛ">ИНТЕРСКОЛ
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="MAKITA" checked>MAKITA
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="DEWALT">DEWALT
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="HITACHI">HITACHI
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="filter-power">
-            <h3>ПИТАНИЕ:</h3>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio" name="power" checked>АККУМУЛЯТОРНЫЕ
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="power">СЕТЕВЫЕ
-                </label>
-              </li>
-            </ul>
-            <button type="button" name="show">ПОКАЗАТЬ</button>
-          </div>
+            <div class="filter-power">
+              <h3>ПИТАНИЕ:</h3>
+              <label>
+                <input type="radio" name="power" checked>АККУМУЛЯТОРНЫЕ
+              </label>
+              <label>
+                <input type="radio" name="power">СЕТЕВЫЕ
+              </label>
+              <button type="button" name="show">ПОКАЗАТЬ</button>
+            </div>
+          </form>
         </section>
-        <section>
+        <section class="goods-list">
           <div class="sort">
-            <h3>СОРТИРОВКА</h3>
+            <span>СОРТИРОВКА</span>
             <a href="#" class="sort-price">ПО ЦЕНЕ</a>
             <a href="#" class="sort-type">ПО ТИПУ</a>
             <a href="#" class="sort-function">ПО ФУНКЦИОНАЛУ</a>
@@ -219,11 +203,11 @@
             </ul>
           </div>
         </section>
-        <section>
+        <section class="about">
           <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
           <p>
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор 
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
           </p>
         </section>
       </div>
@@ -234,8 +218,8 @@
           <h2>ТЕХНОМАРТ</h2>
         </div>
         <div class="contacts-footer">
-          <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          <span>+7 (812) 555-05-55</span>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55</p>
         </div>
         <div class="footer-navigation-top">
           <ul>
@@ -272,20 +256,22 @@
             </li>
           </ul>
         </div>
-        <div class="trademark">
-          <span>© 2010-2016 Компания "Техномарт"</span>
-          <span>Все права защищены</span>
-        </div>
-        <div class="social">
-          <a href="#">Вконтакте</a>
-          <a href="#">Фейсбук</a>
-          <a href="#">Инстаграм</a>
-        </div>
-        <div class="feedback">
-          <span>Обратная связь:</span>
-          <a href="#">mail@htmlacademy.ru</a>
-          <span>Разработано –</span>
-          <a href="#">htmlacademy.ru</a>
+        <div class="main-footer">
+          <div class="trademark">
+            <span>© 2010-2016 Компания "Техномарт"</span>
+            <span>Все права защищены</span>
+          </div>
+          <div class="social">
+            <a href="#">Вконтакте</a>
+            <a href="#">Фейсбук</a>
+            <a href="#">Инстаграм</a>
+          </div>
+          <div class="feedback">
+            <span>Обратная связь:</span>
+            <a href="#">mail@htmlacademy.ru</a>
+            <span>Разработано –</span>
+            <a href="#">htmlacademy.ru</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -68,46 +68,36 @@
     </header>
     <main>
       <div class="container">
-        <section>
+        <section class="quick-menu">
           <div class="materials">
-            <a href="#">
-              <span>Материалы</span>
-              <span>НА ЛЮБОЙ ВКУС</span>
-            </a>
+            <h4>Материалы</h4>
+            <a href="#">НА ЛЮБОЙ ВКУС</a>
           </div>
           <div class="instruments">
-            <a href="#">
-              <span>Инструмент</span>
-              <span>НА ВСЕ СЛУЧАИ</span>
-            </a>
+            <h4>Инструмент</h4>
+            <a href="#">НА ВСЕ СЛУЧАИ</a>
           </div>
           <div class="technics">
-            <a href="#">
-              <span>Техника</span>
-              <span>ДЛЯ СТРОЙКИ</span>
-            </a>
+            <h4>Техника</h4>
+            <a href="#">ДЛЯ СТРОЙКИ</a>
           </div>
           <div class="slider">
             <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
           </div>
           <div class="materials">
-            <a href="#">
-              <span>Скидки 50%</span>
-              <span>НА 350 ТОВАРОВ</span>
-            </a>
+            <h4>Скидки 50%</h4>
+            <a href="#">НА 350 ТОВАРОВ</a>
           </div>
           <div class="materials">
-            <a href="#">
-              <span>Доставка</span>
-              <span>БЕСПЛАТНО</span>
-            </a>
+            <h4>Доставка</h4>
+            <a href="#">БЕСПЛАТНО</a>
           </div>
         </section>
-        <section>
+        <section class="popular-goods-header">
           <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
           <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </section>
-        <section>
+        <section class="popular-goods-main">
           <article class="goods">
             <img src="http://placehold.it/184x164" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
             <h3>Перфоратор BOSH BFG 9000</h3>
@@ -133,11 +123,11 @@
             <span class="price">12500 р.</span>
           </article>
         </section>
-        <section class="vendors">
+        <section class="popular-vendors-header">
           <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
           <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </section>
-        <section class="vendors-popular">
+        <section class="popular-vendors-main">
           <div class="vendor-logo">
             <img src="http://placehold.it/126x37" width="126" height="37" alt="Bosh">
           </div>
@@ -182,15 +172,36 @@
               </li>
             </ul>
           </div>
-          <div class="service-description">
+          <div class="delivery-description">
             <h3>ДОСТАВКА</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
             </p>
+            <img src="http://placehold.it/206x146" width="206" height="146">
+          </div>
+          <div class="quarantee-description">
+            <h3>ГАРАНТИЯ</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img src="http://placehold.it/170x172" width="170" height="172">
+          </div>
+          <div class="credit-description">
+            <h3>КРЕДИТ</h3>
+            <p>
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <form class="credit-request" action="">
+              <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+            </form>
+            <img src="http://placehold.it/181x184" width="181" height="184">
           </div>
         </section>
-        <section class="about">
+        <section class="about-us">
           <div class="about-company">
             <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
@@ -218,8 +229,8 @@
           <h2>ТЕХНОМАРТ</h2>
         </div>
         <div class="contacts-footer">
-          <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          <span>+7 (812) 555-05-55</span>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55</p>
         </div>
         <div class="footer-navigation-top">
           <ul>
@@ -256,20 +267,22 @@
             </li>
           </ul>
         </div>
-        <div class="trademark">
-          <span>© 2010-2016 Компания "Техномарт"</span>
-          <span>Все права защищены</span>
-        </div>
-        <div class="social">
-          <a href="#">Вконтакте</a>
-          <a href="#">Фейсбук</a>
-          <a href="#">Инстаграм</a>
-        </div>
-        <div class="feedback">
-          <span>Обратная связь:</span>
-          <a href="#">mail@htmlacademy.ru</a>
-          <span>Разработано –</span>
-          <a href="#">htmlacademy.ru</a>
+        <div class="main-footer">
+          <div class="trademark">
+            <span>© 2010-2016 Компания "Техномарт"</span>
+            <span>Все права защищены</span>
+          </div>
+          <div class="social">
+            <a href="#">Вконтакте</a>
+            <a href="#">Фейсбук</a>
+            <a href="#">Инстаграм</a>
+          </div>
+          <div class="feedback">
+            <span>Обратная связь:</span>
+            <a href="#">mail@htmlacademy.ru</a>
+            <span>Разработано –</span>
+            <a href="#">htmlacademy.ru</a>
+          </div>
         </div>
       </div>
     </footer>
