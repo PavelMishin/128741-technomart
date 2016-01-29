@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <nav class="main-navigation">
@@ -88,6 +90,7 @@
               </div>
               <h3>ЦЕНА:</h3>
               <div class="fader">
+                <input type="range" name="price-fader">
               </div>
               <input type="text" name="min" value="0">
               <input type="text" name="max" value="3000">
@@ -132,13 +135,13 @@
             <a href="#" class="sort-down"></a>
           </div>
           <article class="goods">
-            <img src="http://placehold.it/127x112" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
+            <img src="img/catalog_bosh_bfg_3000.png" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
             <h3>Перфоратор BOSH BFG 3000</h3>
             <span class="old-price">22500 р.</span>
             <span class="price">15500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/144x128" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
+            <img src="img/catalog_bosh_bfg_6000.png" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
             <h3>Перфоратор BOSH BFG 6000</h3>
             <span class="old-price">30500 р.</span>
             <span class="price">25500 р.</span>
@@ -151,37 +154,37 @@
             <span class="price">12500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/127x112" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
+            <img src="img/catalog_bosh_bfg_3000.png" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
             <h3>Перфоратор BOSH BFG 3000</h3>
             <span class="old-price">22500 р.</span>
             <span class="price">15500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/144x128" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
+            <img src="img/catalog_bosh_bfg_6000.png" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
             <h3>Перфоратор BOSH BFG 6000</h3>
             <span class="old-price">30500 р.</span>
             <span class="price">25500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/x" width="127" height="112" alt="Перфоратор Bosh BFG 2000">
+            <img src="img/catalog_bosh_bfg_2000.png" width="127" height="112" alt="Перфоратор Bosh BFG 2000">
             <h3>Перфоратор BOSH BFG 2000</h3>
             <span class="old-price"></span>
             <span class="price">12500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/127x112" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
+            <img src="img/catalog_bosh_bfg_3000.png" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
             <h3>Перфоратор BOSH BFG 3000</h3>
             <span class="old-price">22500 р.</span>
             <span class="price">15500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/144x128" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
+            <img src="img/catalog_bosh_bfg_6000.png" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
             <h3>Перфоратор BOSH BFG 6000</h3>
             <span class="old-price">30500 р.</span>
             <span class="price">25500 р.</span>
           </article>
           <article class="goods">
-            <img src="http://placehold.it/x" width="127" height="112" alt="Перфоратор Bosh BFG 2000">
+            <img src="img/catalog_bosh_bfg_2000.png" width="127" height="112" alt="Перфоратор Bosh BFG 2000">
             <h3>Перфоратор BOSH BFG 2000</h3>
             <span class="old-price"></span>
             <span class="price">12500 р.</span>
@@ -206,7 +209,7 @@
         <section class="about">
           <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
           <p>
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Перфоратор &ndash; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
           </p>
         </section>
@@ -258,7 +261,7 @@
         </div>
         <div class="main-footer">
           <div class="trademark">
-            <span>© 2010-2016 Компания "Техномарт"</span>
+            <span>&copy; 2010-2016 Компания "Техномарт"</span>
             <span>Все права защищены</span>
           </div>
           <div class="social">
@@ -269,7 +272,7 @@
           <div class="feedback">
             <span>Обратная связь:</span>
             <a href="#">mail@htmlacademy.ru</a>
-            <span>Разработано –</span>
+            <span>Разработано &ndash;</span>
             <a href="#">htmlacademy.ru</a>
           </div>
         </div>
