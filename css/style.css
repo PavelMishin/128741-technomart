@@ -1,23 +1,312 @@
 body {
-  font-size: 13px;
+  font-size: 10px;
   line-height: 24px;
-  color: black;
+  color: #000000;
   font-weight: normal;
-  font-family: "PT Sans"
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 h1 {
   font-size: 24px;
-  line-height: 24px;
-  color: white;
+  margin:0;
+  line-height: 1;
+  color: #ffffff;
   font-weight: bold;
-  font-family: "Cuprum"
+  font-family: "Cuprum", sans-serif;
 }
 
 h2 {
   font-size: 30px;
-  line-height: 24px;
-  color: black;
+  margin:0;
+  line-height: 30px;
+  color: #000000;
   font-weight: normal;
-  font-family: "Cuprum"
+  font-family: "Cuprum", sans-serif;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+nav label,
+nav a,
+header a {
+  font-size: 17px;
+}
+
+nav {
+  font-size: 0px;
+}
+
+.logo-nav,
+.search,
+.bookmarks,
+.cart,
+.purchase {
+  display: inline-block;
+    vertical-align: top;
+}
+
+.logo-nav {
+  width: 220px;
+}
+
+.search {
+  width: 270px;
+}
+
+input[name="search"] {
+  width: 150px;
+}
+
+.bookmarks,
+.cart {
+  width: 150px;
+}
+
+.purchase {
+  width: 150px;
+}
+
+header {
+  font-size: 0px;
+}
+
+.market-description,
+.contacts-header,
+.user,
+.second-navigation,
+.second-navigation li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.market-description {
+  width: 300px;
+  font-size: 16px;
+}
+
+.contacts-header {
+  width: 310px;
+  font-size: 14px;
+}
+
+.telephone {
+  font-size: 21px;
+}
+
+.user {
+  width: 300px;
+}
+
+.user a {
+  font-size: 16px;
+}
+
+input[name="login"] {
+  display: block;
+  font-size: 21px;
+}
+
+.second-navigation {
+  width: 940px;
+}
+
+.breadcrumps li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter,
+.goods-list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter {
+  width: 220px;
+}
+
+.goods-list {
+  width: 710px;
+}
+
+.goods-block {
+  font-size: 0px;
+}
+
+.goods-block article:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.pages li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.quick-menu {
+  font-size: 0px;
+}
+
+.instruments,
+.technics,
+.sales,
+.delivery,
+.materials {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 123px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.materials,
+.instruments,
+.slider {
+  margin-right: 20px;
+}
+
+.sales-and-delivery {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+}
+
+.slider {
+  display: inline-block;
+  vertical-align: top;
+  width: 620px;
+  height: 266px;
+  font-size: 14px;
+}
+
+.popular-goods-header {
+  width: 940px;
+}
+
+.popular-goods-header h2{
+  display: inline-block;
+  width: 663px;
+}
+
+.popular-goods-main {
+  font-size: 0px;
+}
+
+article {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.popular-goods-main article:last-child,
+.vendor-logo:nth-child(4n), {
+  margin-right: 0;
+}
+
+.popular-vendors-header {
+  width: 940px;
+}
+
+.popular-vendors-header h2 {
+  display: inline-block;
+  width: 663px;
+}
+
+.popular-vendors-main {
+  font-size: 0px;
+}
+
+.vendor-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.service {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.service-menu,
+.service-content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.service-menu {
+  width: 235px;
+}
+
+.service-content {
+  width: 700px;
+
+}
+
+.delivery-description {
+  background: url("../img/track.png") no-repeat;
+    padding-right: 320px;
+}
+
+.quarantee-description {
+  background: url("../img/guarantee.png") no-repeat;
+    padding-right: 320px;
+}
+
+.credit-description {
+  background: url("../img/credit.png") no-repeat;
+    padding-right: 320px;
+}
+
+.about-company,
+.contacts-main {
+  display: inline-block;
+  vertical-align: top;
+}
+.about-company {
+  width: 635px;
+}
+
+.contacts-main {
+  width: 300px;
+}
+
+.logo-footer,
+.contacts-footer {
+  display: inline-block;
+  vertical-align: top;
+  width: 380px;
+}
+
+footer ul,
+footer li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.trademark,
+.social,
+.feedback,
+.desined {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.trademark {
+  width: 230px;
+}
+
+.social {
+  width: 410px;
+}
+
+.feedback,
+.desined {
+  width: 145px;
 }
