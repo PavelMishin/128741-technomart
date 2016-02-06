@@ -24,6 +24,14 @@ h2 {
   font-family: "Cuprum", sans-serif;
 }
 
+h4 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -46,7 +54,7 @@ nav {
 .cart,
 .purchase {
   display: inline-block;
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .logo-nav {
@@ -101,7 +109,13 @@ header {
   width: 300px;
 }
 
-.user a {
+.enter,
+.registration {
+  font-size: 21px;
+}
+
+.purchases,
+.cabinet {
   font-size: 16px;
 }
 
@@ -117,6 +131,11 @@ input[name="login"] {
 .breadcrumps li {
   display: inline-block;
   vertical-align: top;
+  font-size: 18px;
+}
+
+.market {
+  font-size: 0px;
 }
 
 .filter,
@@ -127,14 +146,34 @@ input[name="login"] {
 
 .filter {
   width: 220px;
+  margin-right: 20px;
+}
+
+.filter-title,
+.filter button {
+  font-size: 13px;
+}
+
+.filter-price,
+.filter span {
+  font-size: 17px;
+}
+
+.filter-vendors label {
+  font-size: 15px;
+}
+
+.filter-power label {
+  font-size: 14px;
 }
 
 .goods-list {
-  width: 710px;
+  width: 700px;
 }
 
-.goods-block {
-  font-size: 0px;
+.sort,
+.pages {
+  font-size: 13px;
 }
 
 .goods-block article:nth-child(3n) {
@@ -144,6 +183,10 @@ input[name="login"] {
 .pages li {
   display: inline-block;
   vertical-align: top;
+}
+
+.about-section p {
+  font-size: 13px;
 }
 
 .quick-menu {
@@ -201,11 +244,22 @@ article {
   vertical-align: top;
   width: 220px;
   margin-right: 20px;
+}
+
+article h3 {
   font-size: 18px;
 }
 
+article span {
+  font-size: 17px;
+}
+
+article a {
+  font-size: 14px;
+}
+
 .popular-goods-main article:last-child,
-.vendor-logo:nth-child(4n), {
+.vendor-logo:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -232,6 +286,15 @@ article {
 .service {
   width: 1200px;
   margin: 0 auto;
+  font-size: 0px;
+}
+
+.service p {
+  font-size: 13px;
+}
+
+.service-menu {
+  font-size: 21px;
 }
 
 .service-menu,
@@ -241,12 +304,12 @@ article {
 }
 
 .service-menu {
-  width: 235px;
+  width: 240px;
+  margin-right: 80px;
 }
 
 .service-content {
-  width: 700px;
-
+  width: 620px;
 }
 
 .delivery-description {
@@ -264,6 +327,22 @@ article {
     padding-right: 320px;
 }
 
+.about-us {
+  font-size: 0px;
+}
+
+.about-us p {
+  font-size: 13px;
+}
+
+.about-us li {
+  font-size: 18px;
+}
+
+.about-us a {
+  font-size: 14px;
+}
+
 .about-company,
 .contacts-main {
   display: inline-block;
@@ -277,6 +356,10 @@ article {
   width: 300px;
 }
 
+footer {
+  font-size: 0px;
+}
+
 .logo-footer,
 .contacts-footer {
   display: inline-block;
@@ -284,10 +367,19 @@ article {
   width: 380px;
 }
 
+.logo-footer {
+  font-size: 30px;
+}
+
+.contacts-footer {
+  font-size: 18px;
+}
+
 footer ul,
 footer li {
   display: inline-block;
   vertical-align: top;
+  font-size: 18px;
 }
 
 .trademark,
@@ -296,6 +388,7 @@ footer li {
 .desined {
   display: inline-block;
   vertical-align: top;
+  font-size: 16px;
 }
 
 .trademark {
