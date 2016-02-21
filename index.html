@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Cuprum:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <nav class="main-navigation">
@@ -15,9 +14,8 @@
           <h1>ТЕХНОМАРТ</h1>
         </div>
         <div class="search">
-          <label>
-            Поиск: <input type="text" name="search">
-          </label>
+            <input type="search" name="search" placeholder="Поиск:">
+            <span class="icon-search"></span>
         </div>
         <div class="bookmarks">
           <a href="#">Закладки: 0</a>
@@ -54,7 +52,7 @@
               <a href="#">Компания</a>
             </li>
             <li>
-              <a href="#">Каталог</a>
+              <a href="catalog.html">Каталог</a>
             </li>
             <li>
               <a href="#">Новости</a>
@@ -88,9 +86,11 @@
             <a href="#">ДЛЯ СТРОЙКИ</a>
           </div>
           <div class="slider">
+            <input type="radio" id="btn-slide-1" name="toggle-slide" checked>
+            <input type="radio" id="btn-slide-2" name="toggle-slide">
             <div class="slider-controls">
-              <i class="active"></i>
-              <i></i>
+              <label for="btn-slide-1"></label>
+              <label for="btn-slide-2"></label>
             </div>
             <div class="arrow-left">
             </div>
@@ -133,9 +133,9 @@
             <div class="image">
               <img src="img/bosh_bfg_9000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
             </div>
-            <h3>Перфоратор BOSH BFG 9000</h3>
-            <span class="old-price">32500 р.</span>
-            <span class="price">25500 р.</span>
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <span class="old-price">32500 Р.</span>
+            <span class="price">25500 Р.</span>
           </article>
           <article class="goods">
             <div class="actions">
@@ -145,9 +145,9 @@
             <div class="image">
               <img src="img/bosh_bfg_3000.jpg" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
             </div>
-            <h3>Перфоратор BOSH BFG 3000</h3>
-            <span class="old-price">22500 р.</span>
-            <span class="price">15500 р.</span>
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <span class="old-price">22500 Р.</span>
+            <span class="price">15500 Р.</span>
           </article>
           <article class="goods">
             <div class="actions">
@@ -157,11 +157,11 @@
             <div class="image">
               <img src="img/bosh_bfg_6000.jpg" width="144" height="128" alt="Перфоратор Bosh BFG 6000">
             </div>
-            <h3>Перфоратор BOSH BFG 6000</h3>
-            <span class="old-price">30500 р.</span>
-            <span class="price">25500 р.</span>
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <span class="old-price">30500 Р.</span>
+            <span class="price">25500 Р.</span>
           </article>
-          <article class="goods">
+          <article class="goods new">
             <div class="actions">
               <a href="#" class="buy">КУПИТЬ</a>
               <a href="#" class="in-bookmarks">В ЗАКЛАДКИ</a>
@@ -169,9 +169,9 @@
             <div class="image">
               <img src="img/bosh_bfg_2000.jpg" width="127" height="112" alt="Перфоратор Bosh BFG 2000">
             </div>
-            <h3>Перфоратор BOSH BFG 2000</h3>
+            <h3>Перфоратор BOSCH BFG 2000</h3>
             <span class="old-price"></span>
-            <span class="price">12500 р.</span>
+            <span class="price">12500 Р.</span>
           </article>
         </section>
         <section class="popular-vendors-header">
@@ -207,6 +207,9 @@
       </div>
       <section class="service">
         <div class="container">
+          <input type="radio" id="btn-service-1" name="toggle-service" checked>
+          <input type="radio" id="btn-service-2" name="toggle-service">
+          <input type="radio" id="btn-service-3" name="toggle-service">
           <h2>СЕРВИСЫ</h2>
           <p>
             Хороший интернет-магазин отличается от плохого не только ценами!<br>
@@ -214,9 +217,9 @@
           </p>
           <div class="service-menu">
             <ul>
-              <li class="active">Доставка</li>
-              <li class="inactive">Гарантия</li>
-              <li class="inactive">Кредит</li>
+              <li><label for="btn-service-1">Доставка</label></li>
+              <li><label for="btn-service-2">Гарантия</label></li>
+              <li><label for="btn-service-3">Кредит</label></li>
             </ul>
           </div>
           <div class="service-content">
@@ -267,7 +270,7 @@
             <p>Вы можете забрать товар сами,<br>
               заехав в наш офис</p>
             <img src="img/map.png" width="300" height="158" alt="ул. Б. Конюшенная, д. 19/8">
-            <a class="btn-contact" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+            <a class="btn-contact" href="write-us.hmtl">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
           </div>
         </section>
       </div>
@@ -277,7 +280,7 @@
         <div class="container">
           <div class="footer-navigation-top">
             <div class="logo-footer">
-              <h1>ТЕХНОМАРТ</h1>
+              <h2>ТЕХНОМАРТ</h2>
             </div>
             <ul>
               <li>
@@ -341,5 +344,39 @@
         </div>
       </div>
     </footer>
+    <div class="write-us">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          Ваше имя:<br>
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label>
+          Ваш e-mail:<br>
+          <input type="text" name="e-mail" placeholder="Для отправки ответа">
+        </label>
+        <label>
+          Текст письма:<br>
+          <textarea name="text" rows="4" cols="40" placeholder="В свободной форме"></textarea>
+        </label>
+        <div class="submit">
+          <button type="submit" name="button">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+      <div class="write-us-close">закрыть</div>
+    </div>
+    <div class="map">
+      <div class="map-close">закрыть</div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5667140105102!2d30.3204922849297!3d59.93933161148163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455614747416" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="add">
+      <div class="sign"></div>
+      <span>Товар добавлен в корзину</span>
+      <div class="add-bottom">
+        <a href="purchase.html">ОФОРМИТЬ ЗАКАЗ</a>
+        <a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+      </div>
+      <div class="add-close">закрыть</div>
+    </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
