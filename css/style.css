@@ -1006,8 +1006,10 @@ input[name="show"]:hover {
 
 .slide {
   position: relative;
-  height: 266px;
-  display: none;
+  height: 0;
+  opacity: 0;
+    transition: opacity 1s;
+
 }
 
 .slide-title {
@@ -1093,7 +1095,8 @@ input[name="show"]:hover {
 
 #btn-slide-1:checked ~ .slides .slide:nth-child(1),
 #btn-slide-2:checked ~ .slides .slide:nth-child(2) {
-  display: block;
+  height: 266px;
+  opacity: 1;
 }
 
 #btn-slide-1:checked ~ .slider-controls label:nth-child(1),

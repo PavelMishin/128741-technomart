@@ -9,6 +9,9 @@
           add_close = [];
           add_close[0] = document.querySelector(".add-close");
           add_close[1] = document.querySelector(".add a:last-child");
+          left = document.querySelector(".arrow-left");
+          right = document.querySelector(".arrow-right");
+          slides = document.querySelectorAll(".slider input[type=\"radio\"]");
 
       function close(block, close_btn) {
         close_btn.addEventListener("click", function(event) {
@@ -40,3 +43,24 @@
       });
 
       write_us_close.addEventListener("click", close(write_us, write_us_close));
+
+      left.addEventListener("click", function() {
+        for (i = 0; i < slides.length; i++) {
+          if (slides[i].checked) {
+            slides[slides.length-1-i].checked = true;
+            break;
+          }
+        }
+      });
+
+      right.addEventListener("click", function() {
+        for (i = 0; i < slides.length; i++) {
+          if (slides[i].checked) {
+            if (i != slides.length - 1)
+              slides[i+1].checked = true;
+            else
+              slides[0].checked = true;
+            break;
+          }
+        }
+      });
